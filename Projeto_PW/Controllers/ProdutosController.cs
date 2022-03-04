@@ -14,6 +14,12 @@ namespace Projeto_PW.Controllers
 
         public IActionResult Create()
         {
+            ProdutoModel produto = new ProdutoModel();
+            produto.Descricao = "Mouse Gamer";
+            produto.Codigo = 72819;
+
+            lsProdutos.Add(produto);
+
             return View();
         }
 
